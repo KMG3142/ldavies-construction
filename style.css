@@ -21,7 +21,7 @@ a{color:inherit}
 h1,h2,h3,p{margin-top:0}
 p{line-height:1.45}
 
-/* Main titles use Noto Serif */
+/* Main titles */
 h1,
 .our-work h2,
 .quality-text h2,
@@ -29,15 +29,8 @@ h1,
   font-family:"Noto Serif", Georgia, serif;
   font-weight:600;
 }
-.contact-logo{
-  width:150px;
-  height:auto;
-  background:#fff;
-  margin-bottom:38px;
-}
 
-
-/* All other text uses IBM Plex Serif in a regular weight */
+/* All other text */
 h3,
 p,
 a,
@@ -90,7 +83,6 @@ button,
   font-size:1rem;
 }
 
-/* Hero closely matched to original Canva composition */
 .hero{
   position:relative;
   min-height:760px;
@@ -110,15 +102,6 @@ button,
   position:absolute;
   inset:0;
   background:rgba(17,45,58,.30);
-}
-.hero-logo{
-  position:absolute;
-  top:0;
-  left:6.7%;
-  width:150px;
-  max-width:18vw;
-  background:#fff;
-  z-index:2;
 }
 .hero-copy{
   position:absolute;
@@ -261,6 +244,12 @@ button,
   display:flex;
   flex-direction:column;
 }
+.contact-logo{
+  width:150px;
+  height:auto;
+  background:#fff;
+  margin-bottom:38px;
+}
 .contact h2{
   font-size:clamp(3.4rem,5.3vw,5.5rem);
   line-height:.96;
@@ -330,11 +319,6 @@ button,
   .hero{
     min-height:690px;
     height:auto;
-  }
-  .hero-logo{
-    left:22px;
-    width:120px;
-    max-width:none;
   }
   .hero-copy{
     position:relative;
