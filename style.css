@@ -3,7 +3,7 @@ html{scroll-behavior:smooth}
 :root{
   --charcoal:#272727;
   --charcoal2:#303030;
-  --green:#173c2b;
+  --green:#1f6429;
   --gold:#b9a087;
   --white:#fff;
 }
@@ -18,7 +18,6 @@ a{color:inherit}
 h1,h2,h3,p{margin-top:0}
 p{line-height:1.45}
 
-/* White navigation banner - deliberately retained from the newer version */
 .topbar{
   height:86px;
   background:#fff;
@@ -32,10 +31,7 @@ p{line-height:1.45}
   z-index:100;
   border-bottom:1px solid #eee;
 }
-.top-logo img{
-  height:70px;
-  width:auto;
-}
+.top-logo img{height:70px;width:auto}
 .main-nav{
   display:flex;
   align-items:center;
@@ -48,12 +44,10 @@ p{line-height:1.45}
   font-size:.92rem;
   font-weight:600;
 }
-.main-nav a:hover{text-decoration:underline}
 .main-nav .top-contact{
-  background:var(--green);
+  background:#173c2b;
   color:#fff;
   padding:13px 19px;
-  text-decoration:none;
 }
 .menu-toggle{
   display:none;
@@ -64,13 +58,12 @@ p{line-height:1.45}
   font-size:1rem;
 }
 
-/* Hero */
+/* Hero closely matched to original Canva composition */
 .hero{
   position:relative;
-  min-height:690px;
+  min-height:calc(100vh - 86px);
   overflow:hidden;
-  display:flex;
-  align-items:center;
+  background:#222;
 }
 .hero-bg{
   position:absolute;
@@ -78,63 +71,78 @@ p{line-height:1.45}
   width:100%;
   height:100%;
   object-fit:cover;
+  object-position:center center;
 }
 .hero-shade{
   position:absolute;
   inset:0;
-  background:linear-gradient(90deg,rgba(0,0,0,.67) 0%,rgba(0,0,0,.42) 52%,rgba(0,0,0,.15) 100%);
+  background:rgba(17,45,58,.30);
 }
-.hero-inner{
-  position:relative;
+.hero-logo{
+  position:absolute;
+  top:0;
+  left:6.7%;
+  width:150px;
+  max-width:18vw;
+  background:#fff;
   z-index:2;
-  width:min(1450px,90%);
-  margin:0 auto;
 }
 .hero-copy{
+  position:absolute;
+  z-index:2;
+  left:11%;
+  top:34%;
   max-width:760px;
 }
 .hero h1{
-  font-size:clamp(3rem,5.8vw,5.6rem);
-  line-height:.98;
-  margin-bottom:25px;
+  font-size:clamp(3.9rem,5.4vw,6rem);
+  line-height:1.02;
+  margin-bottom:30px;
+  font-weight:700;
 }
 .hero p{
-  font-size:clamp(1.05rem,1.5vw,1.28rem);
-  max-width:690px;
-  font-weight:600;
+  font-size:clamp(1.45rem,2vw,2rem);
+  line-height:1.5;
+  margin-bottom:28px;
 }
 .hero-buttons{
   display:flex;
   gap:14px;
   flex-wrap:wrap;
-  margin-top:34px;
 }
 .btn{
-  font-family:Arial,Helvetica,sans-serif;
   display:inline-block;
-  padding:14px 22px;
-  text-decoration:none;
+  padding:18px 58px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.2rem;
   font-weight:700;
-  border:1px solid #fff;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  text-decoration:underline;
+  text-underline-offset:4px;
+  border:1px solid transparent;
+}
+.btn-green{
+  background:var(--green);
+  color:#fff;
+}
+.btn-outline{
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  border-color:#fff;
 }
 .btn-light{
   background:#fff;
   color:#222;
-}
-.btn-outline{
-  background:transparent;
-  color:#fff;
+  text-decoration:none;
 }
 
-/* Our work - return to the user's original simple three-column Canva layout */
+/* Original-style sections retained */
 .our-work{
   background:var(--charcoal);
   padding:90px 6vw 100px;
 }
-.section-wrap{
-  max-width:1500px;
-  margin:0 auto;
-}
+.section-wrap{max-width:1500px;margin:0 auto}
 .our-work h2{
   font-size:clamp(3.5rem,6vw,6.3rem);
   line-height:1;
@@ -162,27 +170,14 @@ p{line-height:1.45}
   max-width:430px;
 }
 
-/* Quality split section - restored to original layout */
 .quality{
   min-height:690px;
   display:grid;
   grid-template-columns:1fr 1fr;
 }
-.quality-photo{
-  position:relative;
-  min-height:690px;
-  overflow:hidden;
-}
-.quality-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.quality-photo-shade{
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,.12);
-}
+.quality-photo{position:relative;min-height:690px;overflow:hidden}
+.quality-photo img{width:100%;height:100%;object-fit:cover}
+.quality-photo-shade{position:absolute;inset:0;background:rgba(0,0,0,.12)}
 .quality-text{
   background:var(--charcoal2);
   padding:8vw 7vw;
@@ -208,7 +203,6 @@ p{line-height:1.45}
   max-width:700px;
 }
 
-/* Contact - matches the Canva contact page composition */
 .contact{
   position:relative;
   min-height:700px;
@@ -247,10 +241,7 @@ p{line-height:1.45}
   font-weight:700;
   max-width:1100px;
 }
-.contact-cta{
-  align-self:flex-start;
-  margin-top:18px;
-}
+.contact-cta{align-self:flex-start;margin-top:18px}
 .contact-grid{
   margin-top:auto;
   padding-top:60px;
@@ -285,9 +276,20 @@ p{line-height:1.45}
   .main-nav.open{display:flex}
   .main-nav .top-contact{text-align:center}
 
-  .hero{min-height:610px}
-  .hero-inner{width:auto;margin:0;padding:65px 24px}
-  .hero h1{font-size:3.5rem}
+  .hero{min-height:680px}
+  .hero-logo{
+    left:22px;
+    width:120px;
+    max-width:none;
+  }
+  .hero-copy{
+    left:24px;
+    right:24px;
+    top:34%;
+  }
+  .hero h1{font-size:3.7rem}
+  .hero p{font-size:1.35rem}
+  .btn{padding:15px 28px;font-size:1rem}
 
   .our-work{padding:70px 24px}
   .work-columns{grid-template-columns:1fr;gap:52px}
@@ -303,7 +305,23 @@ p{line-height:1.45}
 }
 
 @media (max-width:520px){
-  .hero h1{font-size:2.9rem}
+  .hero{
+    min-height:650px;
+  }
+  .hero-bg{
+    object-position:58% center;
+  }
+  .hero-shade{
+    background:linear-gradient(90deg,rgba(15,35,42,.55),rgba(15,35,42,.2));
+  }
+  .hero-copy{
+    top:32%;
+  }
+  .hero h1{font-size:3rem}
+  .hero p{font-size:1.15rem}
+  .hero-buttons{
+    flex-direction:column;
+    align-items:flex-start;
+  }
   .our-work h2,.quality-text h2,.contact h2{font-size:3rem}
-  .hero-buttons{flex-direction:column;align-items:flex-start}
 }
