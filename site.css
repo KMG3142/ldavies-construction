@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&family=Noto+Serif:wght@600&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{--charcoal:#272727;--charcoal2:#303030;--green:#1f6429;--gold:#b9a087;--white:#fff}
+body{margin:0;font-family:"IBM Plex Serif",Georgia,serif;font-weight:400;color:#fff;background:#fff}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p{margin-top:0}
+p{line-height:1.45}
+
+.hero h1,.our-work h2,.quality-text h2,.contact h2{
+  font-family:"Noto Serif",Georgia,serif;
+  font-weight:600;
+  background:transparent!important;
+}
+.hero h1::before,.hero h1::after,
+.our-work h2::before,.our-work h2::after,
+.quality-text h2::before,.quality-text h2::after,
+.contact h2::before,.contact h2::after{
+  content:none!important;
+  display:none!important;
+}
+
+h3,p,a,button,.main-nav,.btn,.contact-grid,.work-item p,.quality-text p{
+  font-family:"IBM Plex Serif",Georgia,serif;
+  font-weight:400;
+}
+
+.topbar{height:86px;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:0 5vw;position:sticky;top:0;z-index:100;border-bottom:1px solid #eee}
+.top-logo img{height:70px;width:auto}
+.main-nav{display:flex;align-items:center;gap:28px}
+.main-nav a{color:#2b2b2b;text-decoration:none;font-size:.92rem;font-weight:400}
+.main-nav .top-contact{background:#173c2b;color:#fff;padding:13px 19px}
+.menu-toggle{display:none;border:0;background:none;color:#222;font-weight:400;font-size:1rem}
+
+.hero{position:relative;min-height:760px;height:calc(100vh - 86px);overflow:hidden;background:#222}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-shade{position:absolute;inset:0;background:rgba(17,45,58,.30)}
+.hero-copy{position:absolute;z-index:2;left:11%;top:27%;max-width:760px}
+.hero h1{font-size:clamp(3.7rem,5.1vw,5.7rem);line-height:1.01;margin-bottom:20px}
+.hero p{font-size:clamp(1.35rem,1.8vw,1.9rem);line-height:1.42;margin-bottom:22px}
+.hero-buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:16px 44px;font-size:1.08rem;font-weight:400;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border:1px solid transparent}
+.btn-green{background:var(--green);color:#fff}
+.btn-outline{background:rgba(255,255,255,.06);color:#fff;border-color:#fff}
+.btn-light{background:#fff;color:#222;text-decoration:none}
+
+.our-work{background:var(--charcoal);padding:90px 6vw 100px}
+.section-wrap{max-width:1500px;margin:0 auto}
+.our-work h2{font-size:clamp(3.5rem,6vw,6.3rem);line-height:1;margin-bottom:55px}
+.work-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.work-item img{width:100%;aspect-ratio:1.35/1;object-fit:cover;margin-bottom:25px}
+.work-item h3{font-size:clamp(1.6rem,2.2vw,2.2rem);margin-bottom:14px;font-weight:400}
+.work-item p{color:#ececec;font-size:1rem;max-width:430px}
+
+.quality{min-height:690px;display:grid;grid-template-columns:1fr 1fr}
+.quality-photo{position:relative;min-height:690px;overflow:hidden}
+.quality-photo img{width:100%;height:100%;object-fit:cover}
+.quality-photo-shade{position:absolute;inset:0;background:rgba(0,0,0,.12)}
+.quality-text{background:var(--charcoal2);padding:8vw 7vw;display:flex;flex-direction:column;justify-content:center}
+.quality-text h2{font-size:clamp(3.2rem,5vw,5.8rem);line-height:1;margin-bottom:28px}
+.quality-text h3{color:var(--gold);font-size:clamp(1.3rem,2vw,2rem);line-height:1.18;margin-bottom:30px;font-weight:400}
+.quality-text p{font-size:1.04rem;color:#f0f0f0;max-width:700px;font-weight:400}
+.quality-text strong{font-weight:500}
+
+.contact{position:relative;min-height:700px;overflow:hidden}
+.contact-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.contact-shade{position:absolute;inset:0;background:rgba(0,0,0,.46)}
+.contact-inner{position:relative;z-index:2;max-width:1500px;min-height:700px;margin:0 auto;padding:85px 6vw 48px;display:flex;flex-direction:column}
+.contact-logo{display:block;width:150px;height:auto;margin-bottom:38px}
+.contact h2{font-size:clamp(3.4rem,5.3vw,5.5rem);line-height:.96;max-width:760px;margin-bottom:34px}
+.contact-intro{font-size:clamp(1.1rem,1.5vw,1.35rem);font-weight:400;max-width:1100px}
+.contact-cta{align-self:flex-start;margin-top:18px}
+.contact-grid{margin-top:auto;padding-top:60px;display:grid;grid-template-columns:1fr 1.8fr;gap:80px;font-size:1.08rem;font-weight:400}
+.contact-grid p{margin-bottom:14px}
+.contact-grid a{text-decoration:none}
+.contact-grid a:hover{text-decoration:underline}
+.business-name{margin-bottom:28px!important;font-weight:400}
+.facebook-line a{display:inline-flex;align-items:center;gap:10px}
+.facebook-icon{width:22px;height:22px;flex:0 0 22px;display:inline-flex}
+.facebook-icon svg{width:100%;height:100%;fill:#1877F2}
+
+@media (max-width:900px){
+  .topbar{height:76px;padding:0 22px}
+  .top-logo img{height:60px}
+  .menu-toggle{display:block}
+  .main-nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px 24px 26px;flex-direction:column;align-items:stretch;gap:18px;border-bottom:1px solid #ddd}
+  .main-nav.open{display:flex}
+  .main-nav .top-contact{text-align:center}
+  .hero{min-height:690px;height:auto}
+  .hero-copy{position:relative;left:auto;top:auto;padding:230px 24px 70px;max-width:680px}
+  .hero h1{font-size:3.55rem}
+  .hero p{font-size:1.3rem}
+  .btn{padding:15px 26px;font-size:1rem}
+  .our-work{padding:70px 24px}
+  .work-columns{grid-template-columns:1fr;gap:52px}
+  .work-item img{aspect-ratio:16/10}
+  .quality{grid-template-columns:1fr}
+  .quality-photo{min-height:420px}
+  .quality-text{padding:65px 24px}
+  .contact{min-height:720px}
+  .contact-inner{padding:70px 24px 38px;min-height:720px}
+  .contact-grid{grid-template-columns:1fr;gap:18px;padding-top:45px}
+}
+
+@media (max-width:520px){
+  .hero{min-height:670px}
+  .hero-bg{object-position:58% center}
+  .hero-shade{background:linear-gradient(90deg,rgba(15,35,42,.55),rgba(15,35,42,.2))}
+  .hero-copy{padding-top:220px;padding-bottom:55px}
+  .hero h1{font-size:2.95rem}
+  .hero p{font-size:1.12rem}
+  .hero-buttons{flex-direction:column;align-items:flex-start}
+  .our-work h2,.quality-text h2,.contact h2{font-size:3rem}
+}
