@@ -61,7 +61,8 @@ p{line-height:1.45}
 /* Hero closely matched to original Canva composition */
 .hero{
   position:relative;
-  min-height:calc(100vh - 86px);
+  min-height:760px;
+  height:calc(100vh - 86px);
   overflow:hidden;
   background:#222;
 }
@@ -91,19 +92,19 @@ p{line-height:1.45}
   position:absolute;
   z-index:2;
   left:11%;
-  top:34%;
+  top:27%;
   max-width:760px;
 }
 .hero h1{
-  font-size:clamp(3.9rem,5.4vw,6rem);
-  line-height:1.02;
-  margin-bottom:30px;
+  font-size:clamp(3.7rem,5.1vw,5.7rem);
+  line-height:1.01;
+  margin-bottom:20px;
   font-weight:700;
 }
 .hero p{
-  font-size:clamp(1.45rem,2vw,2rem);
-  line-height:1.5;
-  margin-bottom:28px;
+  font-size:clamp(1.35rem,1.8vw,1.9rem);
+  line-height:1.42;
+  margin-bottom:22px;
 }
 .hero-buttons{
   display:flex;
@@ -112,9 +113,9 @@ p{line-height:1.45}
 }
 .btn{
   display:inline-block;
-  padding:18px 58px;
+  padding:16px 44px;
   font-family:Georgia,"Times New Roman",serif;
-  font-size:1.2rem;
+  font-size:1.08rem;
   font-weight:700;
   text-transform:uppercase;
   letter-spacing:.04em;
@@ -137,7 +138,6 @@ p{line-height:1.45}
   text-decoration:none;
 }
 
-/* Original-style sections retained */
 .our-work{
   background:var(--charcoal);
   padding:90px 6vw 100px;
@@ -256,6 +256,23 @@ p{line-height:1.45}
 .contact-grid a:hover{text-decoration:underline}
 .business-name{margin-bottom:28px!important}
 
+.facebook-line a{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+}
+.facebook-icon{
+  width:22px;
+  height:22px;
+  flex:0 0 22px;
+  display:inline-flex;
+}
+.facebook-icon svg{
+  width:100%;
+  height:100%;
+  fill:#1877F2;
+}
+
 @media (max-width:900px){
   .topbar{height:76px;padding:0 22px}
   .top-logo img{height:60px}
@@ -276,20 +293,25 @@ p{line-height:1.45}
   .main-nav.open{display:flex}
   .main-nav .top-contact{text-align:center}
 
-  .hero{min-height:680px}
+  .hero{
+    min-height:690px;
+    height:auto;
+  }
   .hero-logo{
     left:22px;
     width:120px;
     max-width:none;
   }
   .hero-copy{
-    left:24px;
-    right:24px;
-    top:34%;
+    position:relative;
+    left:auto;
+    top:auto;
+    padding:230px 24px 70px;
+    max-width:680px;
   }
-  .hero h1{font-size:3.7rem}
-  .hero p{font-size:1.35rem}
-  .btn{padding:15px 28px;font-size:1rem}
+  .hero h1{font-size:3.55rem}
+  .hero p{font-size:1.3rem}
+  .btn{padding:15px 26px;font-size:1rem}
 
   .our-work{padding:70px 24px}
   .work-columns{grid-template-columns:1fr;gap:52px}
@@ -306,19 +328,18 @@ p{line-height:1.45}
 
 @media (max-width:520px){
   .hero{
-    min-height:650px;
+    min-height:670px;
   }
-  .hero-bg{
-    object-position:58% center;
-  }
+  .hero-bg{object-position:58% center}
   .hero-shade{
     background:linear-gradient(90deg,rgba(15,35,42,.55),rgba(15,35,42,.2));
   }
   .hero-copy{
-    top:32%;
+    padding-top:220px;
+    padding-bottom:55px;
   }
-  .hero h1{font-size:3rem}
-  .hero p{font-size:1.15rem}
+  .hero h1{font-size:2.95rem}
+  .hero p{font-size:1.12rem}
   .hero-buttons{
     flex-direction:column;
     align-items:flex-start;
