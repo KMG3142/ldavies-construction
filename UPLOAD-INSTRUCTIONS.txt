@@ -1,0 +1,14 @@
+CORRECTED L DAVIES WEBSITE UPDATE
+
+Upload ONLY index.html and work.html to the ROOT of the GitHub repository and allow them to replace the current files with the same names.
+
+Do NOT delete or replace:
+- CNAME
+- site.css
+- script.js
+- style.css
+- README.md
+- assets/
+- assets/portfolio/
+
+This correction restores the original homepage layout/images, keeps the correct .com email, links Our Work/View our work to work.html, and adds the original website photographs back into the portfolio alongside the new portfolio photographs.
