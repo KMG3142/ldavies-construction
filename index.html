@@ -8,6 +8,11 @@
   <meta name="theme-color" content="#252525">
   <link rel="icon" href="assets/logo.jpg">
   <link rel="stylesheet" href="site.css?v=20260911-1">
+  <style>
+.work-link{display:block;color:inherit;text-decoration:none}
+.work-link:hover h3{text-decoration:underline;text-underline-offset:4px}
+.work-all-link{text-align:center;margin-top:34px}
+  </style>
 </head>
 <body>
 
@@ -18,10 +23,10 @@
   <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
   <nav id="main-nav" class="main-nav" aria-label="Main navigation">
     <a href="#home">Home</a>
-    <a href="work.html">Our Work</a>
-    <a href="#quality">Quality Workmanship</a>
+    <a href="work.html">Our work</a>
+    <a href="#quality">Quality workmanship</a>
     <a href="#contact">Contact</a>
-    <a class="top-contact" href="mailto:ldaviesconstruction@outlook.com?subject=Website%20Enquiry%20-%20L%20Davies%20Construction">Get in touch</a>
+    <a class="top-contact" href="mailto:ldaviesconstruction@ldaviesconstruction.com?subject=Website%20Enquiry%20-%20L%20Davies%20Construction">Get in touch</a>
   </nav>
 </header>
 
@@ -39,29 +44,6 @@
     </div>
   </section>
 
-  <section id="work" class="our-work">
-    <div class="section-wrap">
-      <h2>Our work</h2>
-      <div class="work-columns">
-        <article class="work-item">
-          <img src="assets/extension-front.jpg" alt="Completed extension and renovation">
-          <h3>Extensions &amp; Renovations</h3>
-          <p>Thoughtfully designed extensions and renovations that make the most of your home and the way you live.</p>
-        </article>
-        <article class="work-item">
-          <img src="assets/trevern-black.jpg" alt="Completed new build construction project">
-          <h3>New Builds &amp; Construction</h3>
-          <p>Complete building projects delivered with care, quality workmanship and attention to detail.</p>
-        </article>
-        <article class="work-item">
-          <img src="assets/kitchen-main.jpg" alt="Completed kitchen and interior">
-          <h3>Kitchens &amp; Interiors</h3>
-          <p>Beautiful, practical interior spaces finished to a high standard.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <section id="quality" class="quality">
     <div class="quality-photo">
       <img src="assets/kitchen-wide.jpg" alt="Finished kitchen by L Davies Construction">
@@ -72,6 +54,30 @@
       <h3>Care and attention from the structure to the finishing touches.</h3>
       <p>We take pride in delivering a high standard of workmanship across every part of a project. From new builds and substantial extensions to renovations, kitchens and interior finishes, we approach every job with the same care and attention to detail.</p>
       <p>We work closely with our clients and trusted trades throughout the build, creating well-finished, practical spaces designed around the people who use them. Whether it’s the structure of a new home, timber cladding and glazing, or the final details of a kitchen, our aim is simple: <strong>quality work that’s made to last.</strong></p>
+    </div>
+  </section>
+
+  <section id="work" class="our-work">
+    <div class="section-wrap">
+      <h2>Our work</h2>
+      <div class="work-columns">
+        <a class="work-item work-link" href="work.html?filter=extensions" aria-label="View Extensions and Renovations projects">
+          <img src="assets/extension-front.jpg" alt="Completed extension and renovation">
+          <h3>Extensions &amp; Renovations</h3>
+          <p>Thoughtfully designed extensions and renovations that make the most of your home and the way you live.</p>
+        </a>
+        <a class="work-item work-link" href="work.html?filter=new-builds" aria-label="View New Builds and Construction projects">
+          <img src="assets/trevern-black.jpg" alt="Completed new build construction project">
+          <h3>New Builds &amp; Construction</h3>
+          <p>Complete building projects delivered with care, quality workmanship and attention to detail.</p>
+        </a>
+        <a class="work-item work-link" href="work.html?filter=interiors" aria-label="View Kitchens and Interiors projects">
+          <img src="assets/kitchen-main.jpg" alt="Completed kitchen and interior">
+          <h3>Kitchens &amp; Interiors</h3>
+          <p>Beautiful, practical interior spaces finished to a high standard.</p>
+        </a>
+      </div>
+      <div class="work-all-link"><a class="btn btn-green" href="work.html">View all our work</a></div>
     </div>
   </section>
 

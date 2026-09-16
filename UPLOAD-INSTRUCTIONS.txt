@@ -1,18 +1,19 @@
-L DAVIES CONSTRUCTION — HOMEPAGE FIX
+L DAVIES CONSTRUCTION — UPDATED STRUCTURE
 
-Upload ONLY index.html to the ROOT of the GitHub repository.
+Upload BOTH files to the ROOT of the GitHub repository:
+1. index.html — replace the current homepage
+2. work.html — replace the current Our Work page
 
-It replaces the current index.html.
+Do not delete or replace any other files or folders.
 
-DO NOT delete or replace:
-- work.html
-- CNAME
-- site.css
-- style.css
-- script.js
-- assets/
-- assets/portfolio/
-- README.md
+Homepage order:
+Hero
+Quality Workmanship
+Our Work
+Contact
 
-The full project gallery remains only on work.html.
-The homepage keeps its normal sections and links visitors to work.html.
+The three Our Work cards/images are clickable and open the matching filtered
+project category. "View all our work" opens the full gallery.
+
+The Our Work page no longer has the duplicated large category-card section.
+It contains one short introduction, the filters, and the project gallery.
