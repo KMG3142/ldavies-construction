@@ -1,19 +1,21 @@
-L DAVIES CONSTRUCTION — UPDATED STRUCTURE
+L DAVIES CONSTRUCTION — FINAL TEXT AMENDMENTS
 
 Upload BOTH files to the ROOT of the GitHub repository:
-1. index.html — replace the current homepage
-2. work.html — replace the current Our Work page
+- index.html
+- work.html
+
+Allow them to replace the current versions.
+
+This version includes:
+- Correct email: ldaviesconstruction@outlook.com
+- Correct email on all Get In Touch/mailto links
+- Consistent title/button capitals
+- Our Work
+- Our Projects
+- Quality Workmanship
+- View Our Work
+- View All Our Work
+- Get In Touch
+- Long dash removed from the Our Projects introduction and replaced with a comma
 
 Do not delete or replace any other files or folders.
-
-Homepage order:
-Hero
-Quality Workmanship
-Our Work
-Contact
-
-The three Our Work cards/images are clickable and open the matching filtered
-project category. "View all our work" opens the full gallery.
-
-The Our Work page no longer has the duplicated large category-card section.
-It contains one short introduction, the filters, and the project gallery.
